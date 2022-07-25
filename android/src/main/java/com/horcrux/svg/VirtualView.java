@@ -36,7 +36,7 @@ abstract public class VirtualView extends ReactViewGroup {
     VirtualView(ReactContext reactContext) {
         super(reactContext);
         mContext = reactContext;
-        mScale = DisplayMetricsHolder.getScreenDisplayMetrics().density;
+        mScale = DisplayMetricsHolder.getWindowDisplayMetrics().density;
     }
 
     /*

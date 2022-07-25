@@ -70,7 +70,7 @@ public class SvgView extends ReactViewGroup implements ReactCompoundView, ReactC
 
     public SvgView(ReactContext reactContext) {
         super(reactContext);
-        mScale = DisplayMetricsHolder.getScreenDisplayMetrics().density;
+        mScale = DisplayMetricsHolder.getWindowDisplayMetrics().density;
     }
 
     @Override

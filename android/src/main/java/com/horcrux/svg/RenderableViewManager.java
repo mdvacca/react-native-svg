@@ -369,7 +369,7 @@ class RenderableViewManager extends ViewGroupManager<VirtualView> {
                 invertedCameraDistance = 0.00078125f;
             }
             float cameraDistance = -1 / invertedCameraDistance;
-            float scale = DisplayMetricsHolder.getScreenDisplayMetrics().density;
+            float scale = DisplayMetricsHolder.getWindowDisplayMetrics().density;
 
             // The following converts the matrix's perspective to a camera distance
             // such that the camera perspective looks the same on Android and iOS.
